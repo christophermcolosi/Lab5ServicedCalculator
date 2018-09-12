@@ -49,40 +49,21 @@ namespace SimpleCalculator
                 switch (btn.Name)
                 {
                     case "btnOne":
-                        txtInput.Text += "1";
-                        break;
                     case "btnTwo":
-                        txtInput.Text += "2";
-                        break;
                     case "btnThree":
-                        txtInput.Text += "3";
-                        break;
                     case "btnFour":
-                        txtInput.Text += "4";
-                        break;
                     case "btnFive":
-                        txtInput.Text += "5";
-                        break;
                     case "btnSix":
-                        txtInput.Text += "6";
-                        break;
                     case "btnSeven":
-                        txtInput.Text += "7";
-                        break;
                     case "btnEight":
-                        txtInput.Text += "8";
-                        break;
                     case "btnNine":
-                        txtInput.Text += "9";
-                        break;
                     case "btnZero":
-                        txtInput.Text += "0";
+                        txtInput.Text += btn.Text;
                         break;
                     case "btnDot":
                         if(!txtInput.Text.Contains("."))
                             txtInput.Text += ".";
                         break;
-
                 }
             }
             catch(Exception ex)
@@ -141,11 +122,6 @@ namespace SimpleCalculator
                     MessageBox.Show("Only numbers, +, -, ., *, / are allowed");
                     break;
             }           
-        }
-
-        private void txtInput_TextChanged(object sender, EventArgs e)
-        {
-            
         }
 
         private void btnPlus_Click(object sender, EventArgs e)
@@ -245,11 +221,6 @@ namespace SimpleCalculator
             {
                 txtInput.Text = (opr1 / 4).ToString();
             }
-        }
-
-        private void btnThree_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -22,6 +22,7 @@ namespace CalculatorService
         {
             return f1 + f2;
         }
+
         [WebMethod]
         public double Subtrct(double f1, double f2)
         {
@@ -39,6 +40,5 @@ namespace CalculatorService
         {
             return f1 / f2;
         }
-
     }
 }

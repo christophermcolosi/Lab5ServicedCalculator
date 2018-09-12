@@ -58,7 +58,6 @@
             this.txtInput.Name = "txtInput";
             this.txtInput.Size = new System.Drawing.Size(382, 31);
             this.txtInput.TabIndex = 0;
-            this.txtInput.TextChanged += new System.EventHandler(this.txtInput_TextChanged);
             this.txtInput.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtInput_KeyPress);
             // 
             // btnOne
@@ -90,7 +89,6 @@
             this.btnThree.TabIndex = 3;
             this.btnThree.Text = "3";
             this.btnThree.UseVisualStyleBackColor = true;
-            this.btnThree.Click += new System.EventHandler(this.btnThree_Click);
             // 
             // btnFour
             // 
