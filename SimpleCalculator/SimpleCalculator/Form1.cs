@@ -106,11 +106,35 @@ namespace SimpleCalculator
                 case '8':
                 case '9':
                 case '0':
-                //case '+':
-                //case '-':
-                //case '*':
-                //case '/':
-                //case '.':
+                    break;
+                case '+':
+                    operand1 = txtInput.Text;
+                    operation = '+';
+                    txtInput.Text = string.Empty;
+                    e.Handled = true;
+                    break;
+                case '-':
+                    operand1 = txtInput.Text;
+                    operation = '-';
+                    txtInput.Text = string.Empty;
+                    e.Handled = true;
+                    break;
+                case '*':
+                    operand1 = txtInput.Text;
+                    operation = '*';
+                    txtInput.Text = string.Empty;
+                    e.Handled = true;
+                    break;
+                case '/':
+                    operand1 = txtInput.Text;
+                    operation = '/';
+                    txtInput.Text = string.Empty;
+                    e.Handled = true;
+                    break;
+                case '.':
+                    break;
+                case '\r':
+                    btnEqual_Click(null, null);
                     break;
                 default:
                     e.Handled = true;
