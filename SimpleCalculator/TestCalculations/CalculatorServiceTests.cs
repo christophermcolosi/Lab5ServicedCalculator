@@ -62,6 +62,15 @@ namespace TestCalculations
             Assert.AreEqual(5, quotient);
         }
 
+
+        [TestMethod]
+        public void DivideByZeroTest()
+        {
+            var calcRef = new Calculator.CalculatorSoapClient();
+            var div = calcRef.Divide(25, 0);
+            Assert.AreEqual(div, double.NaN);
+        }
+
         [TestMethod]
         public void SquareRootTest()
         {

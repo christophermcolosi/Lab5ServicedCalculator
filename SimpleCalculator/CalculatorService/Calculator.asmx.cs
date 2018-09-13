@@ -38,6 +38,8 @@ namespace CalculatorService
         [WebMethod]
         public double Divide(double f1, double f2)
         {
+            if (f2 == 0)
+                return double.NaN;
             return f1 / f2;
         }
 
