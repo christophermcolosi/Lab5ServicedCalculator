@@ -8,11 +8,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SimpleCalculator.CalculatorReference {
+namespace TestCalculations.Calculator {
     
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="CalculatorReference.CalculatorSoap")]
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="Calculator.CalculatorSoap")]
     public interface CalculatorSoap {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Add", ReplyAction="*")]
@@ -59,12 +59,12 @@ namespace SimpleCalculator.CalculatorReference {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface CalculatorSoapChannel : SimpleCalculator.CalculatorReference.CalculatorSoap, System.ServiceModel.IClientChannel {
+    public interface CalculatorSoapChannel : TestCalculations.Calculator.CalculatorSoap, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class CalculatorSoapClient : System.ServiceModel.ClientBase<SimpleCalculator.CalculatorReference.CalculatorSoap>, SimpleCalculator.CalculatorReference.CalculatorSoap {
+    public partial class CalculatorSoapClient : System.ServiceModel.ClientBase<TestCalculations.Calculator.CalculatorSoap>, TestCalculations.Calculator.CalculatorSoap {
         
         public CalculatorSoapClient() {
         }
