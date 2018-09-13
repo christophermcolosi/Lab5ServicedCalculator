@@ -68,7 +68,7 @@ namespace TestCalculations
         {
             var calcRef = new Calculator.CalculatorSoapClient();
             var div = calcRef.Divide(25, 0);
-            Assert.AreEqual(div, double.NaN);
+            Assert.AreEqual(double.NaN, div);
         }
 
         [TestMethod]
