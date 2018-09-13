@@ -184,6 +184,8 @@ namespace SimpleCalculator
                         MessageBox.Show("Can't divide by zero");
                     }
                     break;
+                default:
+                    return;
             }
 
             txtInput.Text = result.ToString();
